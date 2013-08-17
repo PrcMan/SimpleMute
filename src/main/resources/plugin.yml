@@ -1,0 +1,48 @@
+name: SimpleMute
+version: 1.0
+author: PrcMan
+main: me.prcman.simplemute.SMManager
+commands:
+    mute:
+        description: Mute a player
+        usage: /mute [player] ([minutes|perm]) ([reason])    
+    unmute:
+        description: UnMute a player
+        usage: /unmute [player]
+    mutelist:
+        description: List muted players
+        usage: /mutelist
+    shutup:
+        description: Ignore command
+        usage: /Shutup [player]
+        permission: shutup.use
+        permission-message: You don't have permission
+    shutuplist:
+        description: Ignored list command
+        usage: /Shutuplist
+        permission: shutup.use
+        permission-message: You don't have permission
+    talk:
+        description: Unignore command
+        usage: /talk [player]
+        permission: shutup.use
+        permission-message: You don't have permission
+permissions: 
+    minemax.mute:
+        description: Gives player access to /mute.
+        default: false 
+    minemax.unmute:
+        description: Gives player access to /unmute.
+        default: false 
+    minemax.mutelist:
+        description: Gives player access to /mutelist.
+        default: false
+    minemax.listen:
+        description: If AdminNotify is true users with this node can read muted messages.
+        default: false
+    shutup.use:
+        default: true
+    shutup.bypass:
+        default: false
+    shutup.admin:
+        default: false

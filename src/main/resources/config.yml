@@ -1,0 +1,38 @@
+# Global settings.
+Global:
+  # Broadcast to everyone when a player is muted or unmuted.
+  Notify: true
+  # Default mute time in minutes when not specified in mute command. (52594900 = perm)
+  DefaultTime: 5
+  # Allow admins to see the muted messages
+  AdminListen: false
+  # Default mute reason
+  DefaultReason: None
+  # Permission node for admins when AdminListen is enabled
+  BroadcastNode: mutemanager.listen
+  # Block optional commands when muted
+  BlockCommands: false
+  # Commands that are blocked when a player is muted
+  Commands:
+    - /msg
+    - /tell
+  AllowOfflineMute: false
+  # Nothing to see here
+  Debug: false
+Messages:
+  NoPermission: '&cYou do not have permission to use this command!'
+  ZeroSeconds: 0 seconds
+  Minutes: minutes
+  Seconds: seconds
+  Hours: hours
+  Days: days
+  Years: years
+  Forever: forever
+  UnableToUnMute: '&eUnable to unmute &b%PLAYER%&e.'
+  YouHaveBeenMuted: '&eYou have been muted! Duration: &a%DURATION%'
+  YouHaveBeenUnMuted: '&eYou have been unmuted!'
+  NoPlayer: 'There is no player by that name online!'
+  Reason: 'Reason'
+  PlayerNowMuted: '&b%PLAYER% &eis now muted! Duration: &a%DURATION%'
+  PlayerNowUnMuted: '&b%PLAYER% &ehas been unmuted!'
+  YouAreMuted: '&eYou are muted! Duration: &a%DURATION%'
